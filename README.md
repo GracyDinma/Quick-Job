@@ -37,12 +37,10 @@ Job Posting Management:
 - Django & Django REST Framework
 - PostgreSQL
 - JWT Authentication.
-- Redis (caching)
 - Swagger (drf-yasg).
 
 ### Architecture
 Quick-Job folows a modular, service-oriented Django architecture that separates business logic from request handling, enabling scalability, maintainability, and testability.
-
 The system is organized into independent Django apps, each responsible for a specific domain:
 
 - users/ - authentication, JWT handling, roles, and user profiles.
@@ -77,3 +75,29 @@ The Quick-Job API is divided into the following:
 - CV upload handling
 - Application lifecycle tracking
 
+## SETUP INSTRUCTIONS
+Follow these steps to run the project locally
+
+# Clone repository
+https://github.com/GracyDinma/Quick-Job.git
+
+# Create Virtual Environment
+- For Bash
+python3 -m venv venv
+source venv/bin/activate
+
+- For Windows
+venv\Scripts\activate
+
+# Install Dependencies
+pip install -r requirements.txt
+
+# Configure Environment Variables
+- Create a .env file in the root directory:
+DEBUG=True
+SECRET_KEY=your_secret_key
+DB_NAME=QUICK-JOB
+DB_USER=postgres
+DB_PASSWORD=your_password
+DB_HOST=localhost
+DB_PORT=5432
