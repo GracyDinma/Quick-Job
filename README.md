@@ -1,6 +1,6 @@
 # Quick-Job
 # Project Overview
-Quick-Job is a project that focuses on creating a backend for a job board platform that enables employers to post and manage job listings, while allowing applicants to discover and apply for jobs.
+Quick-Job is a project that focuses on creating a backend for a job board platform that enables employers(admin) to post and manage job listings, while allowing applicants to discover and apply for jobs.
 
 The system supports role-based access control using JWT authentication, advanced job categorization by industry, location, and job type, and efficient job discovery through optimized search and filtering. The system is designed with modular architecture, performance optimization, and production best practices in mind.
 
@@ -101,3 +101,6 @@ DB_USER=postgres
 DB_PASSWORD=your_password
 DB_HOST=localhost
 DB_PORT=5432
+
+## Database Design (ERD)
+![ERD](<ERD Job backend.png>)
